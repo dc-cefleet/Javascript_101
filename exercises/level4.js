@@ -20,6 +20,18 @@ function lvl4exercise3 (bool) {
   return notTrue
 }
 
+/* 
+    *****Clints comments ***** 
+    
+    Good effort doing this work. Thus far!
+  It seems the terms may have tripped you up I will include some links.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+*/
 function lvl4exercise4 (bool1, bool2) {
   // Return the logical "and" of the input boolean values
 
