@@ -51,7 +51,7 @@
             let aNodelist = document.querySelectorAll(".extra")
 
             let aHTMLCollection = document.getElementsByClassName("extra")
-            let item_ = a aNodelist_[0]
+            let item_ = aNodelist_[0]
 
             item_.parentNode.removeChild(item_)
 
@@ -59,16 +59,31 @@
             console.log(aHTMLCollection_)
             console.log(item_)
 
-
+        const createCard = (title, content, extra) => {
             let newSection = document.createElement("section")
             let newh2 = document.createElement("h2")
-            new2.innerText = "Great things to come"
-            newSection.append(newh2)
+            newh2.innerText = title
+            //writes whatever the text is
+            
 
+            let newP = document.createElement("p")
+            newP.append(content)
+            let newP2 = document.createElement("p")
+            newP2.append(extra)
+
+            newSection.append(newh2,newP, newP2)
             console.log(newSection)
+
+            newP2.setAttribute("class", "extra")
 
             let docbody = document.getElementById('maincontent')
             docbody.append(newSection)
+
+        }
+
+        createCard("Wow", "Clint really like star wars", "But does he realy?")
+        createCard("Sometimes I wonder about...", "Things like, why is the sky blue.",)
+        createCard()
 
 
         </script>
