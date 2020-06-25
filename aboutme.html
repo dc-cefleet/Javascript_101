@@ -3,15 +3,14 @@
     let main = document.getElementById('root')
     let newNav = document.createElement("Nav")
 
-    const head = document.getElementsByTagName('head')
-    let style = document.createElement('link')
-    style.setAttribute('rel', 'stylesheet')
-    style.setAttribute('href', 'styleaboutme.css')
-    head.append(style)
+    let head = document.getElementsByTagName('head')
+    let link = document.createElement('link')
+    link.type = 'text/css'; 
+    link.href = 'styleaboutme.css';
 
     let header = document.createElement("h1")
-    header.append('About Me')
-    main.append(header) 
+    header.append('Welcome')
+    main.append(header)
 
     let navBar = document.createElement("nav")
     main.append(navBar)
@@ -21,14 +20,43 @@
     // navBar.append(navItem)
 
     let sectionItem = document.createElement("section")
-    sectionItem.setAttribute("class", "sectionItem")
+    main.append(sectionItem)
 
-    let sectionList = document.createElement("ul")
+    let sectionList = document.createElement("h2")
     sectionList.innerText = "This is my about me"
-    sectionItem.append(sectionItem)
+    sectionItem.append(sectionList)
 
-    let description = document.createElement("li")
-    description.innerText = "Below are my likes ans dislikes"
+    let description = document.createElement("h3")
+    description.innerText = "Below are my dislikes"
+    sectionItem.append(description)
+
+    let disLikes = document.createElement("li")
+    disLikes.innerText = "Horses"
+    sectionItem.append(disLikes)
+
+    let disLikes2 = document.createElement("li")
+    disLikes2.innerText = "Getting my socks wet"
+    sectionItem.append(disLikes2)
+
+    let disLikes3 = document.createElement("li")
+    disLikes3.innerText = "Milk"
+    sectionItem.append(disLikes3)
+
+    let disLikes4 = document.createElement("li")
+    disLikes4.innerText = "Soggy bread"
+    sectionItem.append(disLikes4)
+
+    let descriptionTwo = document.createElement("h3")
+    descriptionTwo.innerText = "Here are my likes"
+    sectionItem.append(descriptionTwo)
+
+    let likesOne = document.createElement("li")
+    likesOne.innerText = "Warm rainy days"
+    sectionItem.append(likesOne)
+
+    let likesTwo = document.createElement("li")
+    likesTwo.innerText = "A nice cup of coffee on a chilly morning"
+    sectionItem.append(likesTwo)
 
 
 
